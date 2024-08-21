@@ -1,5 +1,5 @@
-/* FOOTER footer {
-  max-width: 0%;
+footer {
+  max-width: 80%;
   margin: 0 auto;
 }
 
@@ -111,16 +111,6 @@ button {
     margin-top: 140px;
   }
 
-  input[type="text"] {
-    width: 350px;
-    height: 40px;
-    padding: 0px 10px 0px 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    color: black;
-  }
-
   button {
     width: 72px;
     height: 40px;
@@ -133,4 +123,4 @@ button {
     cursor: pointer;
     transition: background-color 0.3s;
   }
-} */
+}

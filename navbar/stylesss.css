@@ -58,10 +58,10 @@ nav {
   align-items: center;
   justify-content: center;
 }
-.home:active {
+/* .home:active {
   background-color: #007bff;
   transform: scale(0.98);
-}
+} */
 .about {
   padding: 8px;
   background-color: black;
@@ -129,10 +129,10 @@ nav {
     align-items: center;
     justify-content: center;
   }
-  .home:active {
+  /* .home:active {
     background-color: #007bff;
     transform: scale(0.98);
-  }
+  } */
   .about {
     padding: 8px;
     background-color: black;
