@@ -1,0 +1,87 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  /* background-color: #080808; */
+  /* color: white; */
+}
+body {
+  background-color: #080808;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* My Project Section  */
+
+.my-project-ctn {
+  display: block;
+  text-align: center;
+  justify-content: center;
+  margin-top: 200px;
+  width: auto;
+  gap: 100px;
+}
+.pjt-img-ctn-grp {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  row-gap: 60px;
+  justify-content: center;
+}
+.pjt-text-ctn {
+  display: block;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 64px;
+}
+.pjt-text-ctn-h1 {
+  margin-bottom: 20px;
+}
+
+.pjt-img-ctn {
+  width: 280px;
+  height: 325px;
+  text-align: left;
+}
+
+.pjt-img-lbl {
+  width: 100%;
+  display: block;
+  margin-top: 20px;
+  margin-right: 100px;
+}
+.pjt-img-txt {
+  display: block;
+  margin-right: auto;
+}
+#pjt-img-txt-h1 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 125%;
+}
+#pjt-img-txt-p {
+  font-size: 12px;
+  font-weight: 200;
+}
+
+#more-btn {
+  width: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: left;
+  color: #007bff;
+  text-decoration: none;
+  margin-top: 20px;
+}
+#more-btn-txt {
+  color: #007bff;
+}
+.more-btn {
+  display: flex;
+  gap: 5px;
+  text-decoration: none;
+}

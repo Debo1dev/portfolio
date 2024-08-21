@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styless.css" />
+    <title>about page</title>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js" integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+
+  <body>
+    <section class="header"></section>
+    <section class="body">
+      <div class="content-lbl-ctn">
+        <h1 class="ctnt-lbl-txt-h">About Me</h1>
+        <p class="ctnt-lbl-txt-p">
+          Passionate creator, driven by curiosity and a love for innovation.
+        </p>
+      </div>
+
+      <div class="content-ctn">
+        <div class="content-text-box">
+          <h1 class="intro-h1">Personal Information</h1>
+          <p class="intro-p">
+            With a B.Sc. in Agricultural Sciences, I pivoted to design, driven
+            by a deep passion for creativity. My journey began in graphic
+            design, quickly evolving into UI/UX, where I honed my skills through
+            internships and freelance work. <br />
+            I’m dedicated to continuous learning, always exploring new ideas and
+            drawing inspiration from the world around me. Excited about the
+            future, I aim to become a leading designer, eager to connect and
+            collaborate along the way.
+          </p>
+        </div>
+        <div>
+          <img
+            class="content-img"
+            src="../Img/home-image.png"
+            width="200"
+            height="200"
+          />
+        </div>
+      </div>
+      <div class="content-ctn">
+        <div>
+          <img
+            class="content-img"
+            src="../Img/home-image.png"
+            width="200"
+            height="200"
+          />
+        </div>
+        <div class="content-text-box">
+          <h1 class="intro-h1">My Career</h1>
+          <p class="intro-p">
+            As a UI/UX designer with 2 years of experience, I've combined
+            creativity with a deep understanding of user needs to craft
+            intuitive digital experiences. From graphic design to user-centric
+            solutions, my work spans mobile and web platforms, always aiming to
+            exceed expectations. I’m committed to staying ahead of design trends
+            and delivering impactful, engaging interfaces. Let's connect and
+            create something remarkable together.
+          </p>
+        </div>
+      </div>
+      <div class="content-ctn">
+        <div class="content-text-box">
+          <h1 class="intro-h1">My Vision</h1>
+          <p class="intro-p">
+            My goal is to harness design's power to elevate the digital
+            experience. I believe interfaces should be both beautiful and
+            intuitive, guiding users seamlessly. My aim is to create designs
+            that foster connections between users and technology, making
+            interactions effortless and delightful. By understanding user needs,
+            I craft interfaces that anticipate desires and exceed expectations.
+            I envision a future where design not only solves problems but also
+            enriches lives, sparking joy and a sense of belonging in every
+            interaction. With a focus on innovation, inclusivity, and
+            sustainability, I strive to leave a lasting positive impact through
+            my work.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- NAVBAR AND FOOTER  -->
+
+    <div id="footer_content"></div>
+    <div id="navbar_container"></div>
+
+    <script type="text/javascript">
+      $("#navbar_container").load("../navbar/navbar.html");
+      $("#footer_content").load("../footer/footer.html");
+
+      const stylesssCss = document.createElement("link");
+      stylesssCss.rel = "stylesheet";
+      stylesssCss.type = "text/css";
+      stylesssCss.href = "../navbar/stylesss.css"; // Path to your CSS file
+      document.head.appendChild(stylesssCss);
+
+      // Dynamically load the CSS file
+      const stylesCss = document.createElement("link");
+      stylesCss.rel = "stylesheet";
+      stylesCss.type = "text/css";
+      stylesCss.href = "../footer/styles.css"; // Path to your CSS file
+      document.head.appendChild(stylesCss);
+    </script>
+  </body>
+</html>
