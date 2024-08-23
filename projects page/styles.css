@@ -6,12 +6,15 @@
   font-weight: weight;
   font-style: normal;
   /* background-color: #080808; */
-  /* color: white; */
+  color: white;
 }
 body {
   background-color: #080808;
   max-width: 1000px;
   margin: 0 auto;
+}
+li {
+  list-style: none;
 }
 
 /* My Project Section  */
@@ -20,7 +23,7 @@ body {
   display: block;
   text-align: center;
   justify-content: center;
-  margin-top: 200px;
+  margin-top: 150px;
   width: auto;
   gap: 100px;
 }
@@ -37,11 +40,24 @@ body {
   justify-content: center;
   margin-bottom: 64px;
 }
+
+.pjt-img {
+  object-fit: cover;
+  object-position: left;
+  border-radius: 20px;
+}
 .pjt-text-ctn-h1 {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  font-size: 32px;
+  font-weight: 600;
 }
 
-.pjt-img-ctn {
+.pjt-text-ctn-p {
+  font-size: 16px;
+  font-weight: 200;
+}
+
+.pjt-text-ctn-h1 .pjt-img-ctn {
   width: 280px;
   height: 325px;
   text-align: left;
@@ -56,6 +72,7 @@ body {
 .pjt-img-txt {
   display: block;
   margin-right: auto;
+  justify-content: center;
 }
 #pjt-img-txt-h1 {
   margin-bottom: 10px;
@@ -72,7 +89,7 @@ body {
   width: 100%;
   display: flex;
   text-align: center;
-  justify-content: left;
+  justify-content: center;
   color: #007bff;
   text-decoration: none;
   margin-top: 20px;
@@ -84,4 +101,191 @@ body {
   display: flex;
   gap: 5px;
   text-decoration: none;
+}
+
+/* Nav Styless  */
+
+nav {
+  justify-content: center;
+  height: 3rem;
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+.nav-bar {
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin: 16px;
+  background-color: #343434bf;
+  position: fixed;
+  padding: 10px 20px;
+  border-radius: 15px;
+  top: 1rem;
+  box-shadow: 0.2px 0.5px 3px 2px #007bff59;
+}
+.action-btn {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.home {
+  padding: 8px;
+  background-color: black;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about {
+  padding: 8px;
+  background-color: black;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.project {
+  padding: 8px;
+  background-color: black;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.resume {
+  padding: 8px;
+  background-color: black;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-btn {
+  display: flex;
+  text-align: center;
+  white-space: nowrap;
+  padding: 11px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    width: 95%;
+  }
+
+  nav {
+    justify-content: center;
+    height: 2rem;
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+  }
+
+  .home {
+    padding: 8px;
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /* .home:active {
+    background-color: #007bff;
+    transform: scale(0.98);
+  } */
+  .about {
+    padding: 8px;
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .project {
+    padding: 8px;
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .resume {
+    padding: 8px;
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contact-btn {
+    display: flex;
+    text-align: center;
+    white-space: nowrap;
+    padding: 11px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+  }
+
+  .nav-bar {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 16px;
+    background-color: #343434bf;
+    position: fixed;
+    padding: 10px 10px;
+    border-radius: 15px;
+    top: 1rem;
+    box-shadow: 0.2px 0.5px 3px 2px #007bff59;
+  }
+  .logo {
+    display: none;
+  }
+
+  .action-btn {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+  }
 }

@@ -25,8 +25,8 @@ li {
   text-align: center;
   gap: 100px;
   opacity: 0px;
-  margin-top: 245px;
-  padding: 20px;
+  margin-top: 150px;
+  padding: 0px 20px;
 }
 
 .image-ctn {
@@ -116,16 +116,29 @@ li {
   text-align: center;
   justify-content: center;
   max-width: 80%;
-  margin: 2rem auto;
+  margin: 4rem auto;
 }
 .pjt-text-ctn-h1 {
   margin-bottom: 20px;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.pjt-text-ctn-p {
+  font-size: 16px;
+  font-weight: 200;
 }
 
 .pjt-img-ctn {
   width: 280px;
   height: 325px;
   text-align: left;
+}
+
+.pjt-img {
+  object-fit: cover;
+  object-position: left;
+  border-radius: 20px;
 }
 
 .pjt-img-lbl {
@@ -162,7 +175,6 @@ li {
   justify-content: center;
   white-space: nowrap;
   padding: 10px;
-
   color: white;
   text-decoration: none;
   border-radius: 8px;
@@ -177,11 +189,12 @@ li {
   padding: 10px;
   border-radius: 8px;
   text-decoration: none;
-  width: 100px;
+  width: auto;
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-top: 20px;
+  margin-top: 30px;
+  box-shadow: 0px 4px 6px rgba(158, 22, 22, 0.1);
 }
 
 /* DECORATIONS */
@@ -223,11 +236,12 @@ li {
     text-align: center;
     gap: 100px;
     opacity: 0px;
-    margin-top: 245px;
+    margin-top: 150px;
     padding: 20px;
   }
+
   .logo-ctn {
-    display: flex;
+    display: none;
     text-align: center;
     justify-content: center;
     margin-top: 120px;
@@ -258,7 +272,7 @@ li {
 
 nav {
   justify-content: center;
-  height: 3rem;
+  height: 4rem;
   width: 100%;
   display: flex;
   align-items: baseline;
@@ -266,6 +280,7 @@ nav {
   position: sticky;
   top: 0;
   left: 0;
+  z-index: 2;
 }
 
 .nav-bar {
@@ -279,7 +294,7 @@ nav {
   position: fixed;
   padding: 10px 20px;
   border-radius: 15px;
-  top: 4rem;
+  top: 1rem;
   box-shadow: 0.2px 0.5px 3px 2px #007bff59;
 }
 .action-btn {
@@ -427,7 +442,7 @@ nav {
     position: fixed;
     padding: 10px 10px;
     border-radius: 15px;
-    top: 4rem;
+    top: 1rem;
     box-shadow: 0.2px 0.5px 3px 2px #007bff59;
   }
   .logo {
@@ -439,5 +454,134 @@ nav {
     gap: 10px;
     align-items: center;
     justify-content: center;
+  }
+}
+
+/* FOOTER STYLES  */
+footer {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.footer-ctn {
+  height: auto;
+  padding-top: 20px;
+  background-image: url(./Img/footer-backgroung.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 80px;
+}
+.footer-lbl-ctn {
+  display: block;
+  text-align: center;
+  justify-content: center;
+  height: 68px;
+}
+.footer-lbl-txt-h {
+  margin-bottom: 10px;
+  font-size: 32px;
+  font-weight: 600;
+  color: white;
+}
+.footer-lbl-txt-p {
+  font-size: 16px;
+  font-weight: 200;
+  color: white;
+}
+
+.body {
+  display: block;
+  justify-content: center;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 48px;
+}
+
+label {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+input[type="text"] {
+  width: 320px;
+  height: 40px;
+  padding: 0px 10px 0px 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: black;
+}
+
+button {
+  width: 72px;
+  height: 40px;
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.location-info {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.contact-me-ctn {
+  display: block;
+  justify-content: center;
+  text-align: center;
+  margin-top: 30px;
+}
+
+#contact-me-txt {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.socials-ctn {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 600) {
+  .footer-ctn {
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    background-image: url(./Img/footer-backgroung.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 140px;
+  }
+
+  button {
+    width: 72px;
+    height: 40px;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
   }
 }

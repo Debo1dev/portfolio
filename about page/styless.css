@@ -13,13 +13,18 @@ body {
   max-width: 1000px;
   margin: 0 auto;
 }
+
+li {
+  list-style-type: none;
+}
+
 .content-lbl-ctn {
   display: block;
   text-align: center;
   justify-content: center;
   width: auto;
   height: 68px;
-  margin-top: 200px;
+  margin-top: 150px;
 }
 .ctnt-lbl-txt-h {
   margin-bottom: 10px;
@@ -68,9 +73,192 @@ body {
   text-align: center;
 }
 
+/* Nav Styless  */
+
+nav {
+  justify-content: center;
+  height: 3rem;
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+.nav-bar {
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin: 16px;
+  background-color: #343434bf;
+  position: fixed;
+  padding: 10px 20px;
+  border-radius: 15px;
+  top: 1rem;
+  box-shadow: 0.2px 0.5px 3px 2px #007bff59;
+}
+.action-btn {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.home {
+  padding: 8px;
+  background-color: black;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about {
+  padding: 8px;
+  background-color: black;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.project {
+  padding: 8px;
+  background-color: black;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.resume {
+  padding: 8px;
+  background-color: black;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-btn {
+  display: flex;
+  text-align: center;
+  white-space: nowrap;
+  padding: 11px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
 /* Mobile responsiveness */
 
 @media screen and (max-width: 600px) {
+  nav {
+    justify-content: center;
+    height: 2rem;
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+  }
+
+  .home {
+    padding: 8px;
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /* .home:active {
+    background-color: #007bff;
+    transform: scale(0.98);
+  } */
+  .about {
+    padding: 8px;
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .project {
+    padding: 8px;
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .resume {
+    padding: 8px;
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contact-btn {
+    display: flex;
+    text-align: center;
+    white-space: nowrap;
+    padding: 11px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+  }
+
+  .nav-bar {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 16px;
+    background-color: #343434bf;
+    position: fixed;
+    padding: 10px 10px;
+    border-radius: 15px;
+    top: 1rem;
+    box-shadow: 0.2px 0.5px 3px 2px #007bff59;
+  }
+  .logo {
+    display: none;
+  }
+
+  .action-btn {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Body  */
+
   .content-ctn {
     display: flex;
     flex-wrap: wrap-reverse;
@@ -78,7 +266,7 @@ body {
     text-align: center;
     gap: 100px;
     opacity: 0px;
-    margin-top: 145px;
+    margin-top: 150px;
     padding: 20px;
   }
 }
