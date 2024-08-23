@@ -26,6 +26,8 @@ li {
   margin-top: 150px;
   width: auto;
   gap: 100px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 .pjt-img-ctn-grp {
   display: flex;
@@ -192,10 +194,6 @@ nav {
 }
 
 @media screen and (max-width: 600px) {
-  body {
-    width: 95%;
-  }
-
   nav {
     justify-content: center;
     height: 2rem;

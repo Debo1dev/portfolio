@@ -1,8 +1,17 @@
 footer {
-  max-width: 80%;
+  max-width: 100%;
   margin: 0 auto;
 }
+.form-container {
+  width: 100%;
+}
 
+#input-field {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+}
 .footer-ctn {
   height: auto;
   padding-top: 20px;
@@ -17,6 +26,7 @@ footer {
   text-align: center;
   justify-content: center;
   height: 68px;
+  margin: 0px 10px;
 }
 .footer-lbl-txt-h {
   margin-bottom: 10px;
