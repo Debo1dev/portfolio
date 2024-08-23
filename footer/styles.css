@@ -3,15 +3,16 @@ footer {
   margin: 0 auto;
 }
 .form-container {
-  width: 100%;
+  width: auto;
+  margin: 0px 20px;
 }
 
-#input-field {
+/* #input-field {
   display: block;
   align-items: center;
   justify-content: center;
-  width: 280px;
-}
+  width: 80%;
+} */
 .footer-ctn {
   height: auto;
   padding-top: 20px;

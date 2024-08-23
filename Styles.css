@@ -464,15 +464,16 @@ footer {
 }
 
 .form-container {
-  width: 100%;
+  width: auto;
+  margin: 0px 20px;
 }
 
-#input-field {
+/* #input-field {
   display: block;
   align-items: center;
   justify-content: center;
   width: 280px;
-}
+} */
 
 .footer-ctn {
   height: auto;
